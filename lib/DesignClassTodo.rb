@@ -16,5 +16,12 @@ class ToDo
     # Throws an error if no tasks have been set,
     # Otherwise returns formatted string of task list.
   end
+
+  def remove_completed(task)
+    if @todo.include?(task)
+      @todo.delete(task)
+      return "'#{task}' has been completed!"
+    end
+  end
 end
 
