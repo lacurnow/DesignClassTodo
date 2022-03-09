@@ -21,6 +21,8 @@ class ToDo
     if @todo.include?(task)
       @todo.delete(task)
       return "'#{task}' has been completed!"
+    else 
+      fail "'do yoga' task does not exist"
     end
   end
 end

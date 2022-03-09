@@ -54,5 +54,6 @@ RSpec.describe ToDo do
       new_todo = ToDo.new("Luci")
       new_todo.add("feed the cat")
       expect { new_todo.remove_completed("do yoga") }.to raise_error "'do yoga' task does not exist"
+    end
   end
 end
