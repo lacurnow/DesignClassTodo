@@ -64,4 +64,16 @@ new_todo.see_tasks()
 new_todo = ToDo("Luci")
 new_todo.add("")
 # fails with "Please enter a task." 
+
+#5
+new_todo = ToDo.new("Luci")
+new_todo.add("feed the cat")
+new_todo.remove_completed("feed the cat")
+# returns a string with "'feed the cat' has been completed!"
+
+#6
+new_todo = ToDo.new("Luci")
+new_todo.add("feed the cat")
+new_todo.remove_completed("do yoga")
+# fails with "'do yoga' task does not exist"
 ```
